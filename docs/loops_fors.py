@@ -53,7 +53,7 @@ for num_count in [0,2,4]:
     str_anwser = list_polls[num_count+1]
     print("{}".format(str_anwser))
 
-    str_question_result = input("당신에 답변(A~E를 순서 맞게 번호로 입력) : ")
+    str_question_result = input("당신에 답변(A~E 순서 맞게 번호로) : ")
     num_question_result = int(str_question_result)  # 문자를 숫자로 변환
     index = num_question_result - 1 # index 위치값 적용
     list_statistics[index] = list_statistics[index] + 1
