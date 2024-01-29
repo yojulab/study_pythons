@@ -1,13 +1,13 @@
 from typing import Optional
 
 class kwargs:
-    def __init__(self, 
-        email: Optional[str] = None,
-        pswd: Optional[str] = None,
-        manager: Optional[str] = None,
-        name: Optional[str] = None,
-        sellist1 : Optional[str] = None,
-        text : Optional[str] = None) -> None:
+    def __init__(self
+                 , email: str = None
+                 ,pswd: str = None
+                 ,manager: str = None
+                 ,name: str = None
+                 ,sellist1 : str = None
+                 ,text : str = None) -> None:
         self.name = name
         self.pswd = pswd
         self.email = email
@@ -18,6 +18,9 @@ if __name__ == "__main__":
         "pswd": "Password123!"
         ,"email": "chulsoo.kim@example.com"
         ,"name": "김철수"
+        # , "manager":'on'
     }
-    kwargs(**user)
+    # kwargs(email=user["email"], name=user["name"])
+    # kwargs(**user)
+    kwargs(user)
     pass
